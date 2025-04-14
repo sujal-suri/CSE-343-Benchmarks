@@ -1,12 +1,18 @@
-# requirements.txt
 streamlit>=1.18.0
-torch>=1.12.0,<2.0.0 # adjust if needed based on training torch version
-torchvision>=0.13.0,<1.0.0 # match torch compatibility
-torchaudio>=0.12.0,<1.0.0 # match torch compatibility
+
+# --- pin numpy < 2.0 for compatibility with torch/torchvision wheels ---
+numpy>=1.21.0,<2.0
+# --- end numpy pinning ---
+
+# torch/torchvision often link to specific numpy builds
+torch>=1.12.0,<2.0.0 # adjust based on training torch version
+torchvision>=0.13.0,<1.0.0 # match torch
+torchaudio>=0.12.0,<1.0.0 # match torch
+
 librosa>=0.9.2
-numpy>=1.21.0
-scipy>=1.7.0
+scipy>=1.7.0 # pinning numpy also helps scipy compatibility
 soundfile>=0.11.0
-# pandas and sklearn are not strictly needed for this inference app but were in notebook imports
+
+# pandas & sklearn commented out - not needed for inference app
 # pandas>=1.3.0
 # scikit-learn>=1.0.0
