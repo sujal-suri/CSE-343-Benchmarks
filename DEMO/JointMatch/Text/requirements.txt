@@ -1,0 +1,4 @@
+streamlit
+torch==2.1.0  # Or a version compatible with your model/environment. Specify cpuonly if needed.
+numpy
+pandas
