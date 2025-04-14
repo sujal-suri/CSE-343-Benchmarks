@@ -1,0 +1,6 @@
+streamlit
+torch>=1.7
+torchvision>=0.8
+efficientnet-pytorch==0.7.1 # Use the latest available version
+Pillow>=7.0.0
+numpy>=1.18.0
