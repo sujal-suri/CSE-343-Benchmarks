@@ -1,0 +1,14 @@
+streamlit
+pillow
+torchvision
+tqdm
+torch
+torchaudio
+timm
+wandb
+pandas
+numpy
+scikit-learn
+nltk
+matplotlib
+transformers
